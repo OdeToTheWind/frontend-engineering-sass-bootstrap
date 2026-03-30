@@ -1,0 +1,27 @@
+// 1. Set your custom variables (Overwrite Bootstrap defaults)
+$primary: #6366f1; // Indigo
+$body-bg: #f8fafc;
+
+// 2. Import Bootstrap functions and variables
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+
+// 3. Import the rest of Bootstrap
+@import "bootstrap/scss/bootstrap";
+
+// 4. Custom Demo Styles (Nesting example)
+.hero-section {
+    padding: 100px 0;
+    background: linear-gradient(135deg, $white, $gray-100);
+    
+    h1 {
+        font-weight: 800;
+        color: $primary;
+        
+        span {
+            color: $dark;
+        }
+    }
+}
